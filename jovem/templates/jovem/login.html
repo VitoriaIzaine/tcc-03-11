@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/login.css' %}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  </head>
+  <body>
+    {% include 'menu.html' %}
+    <img class="wave" src="{% static 'images/wave.svg' %}" />
+    <div class="container">
+      <div class="fund">
+        <img class="bg" src="{% static 'images/bg.svg' %}" />
+      </div>
+      <div class="login-content">
+        {% include 'msg.html' %}
+        <form action="{% url 'login' %}" method="post">
+          {% csrf_token %}
+          <img class="bg" src="{% static 'images/avatar.svg' %}" />
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <label class="form-label">Usuario</label>
+              <input type="text" class="form-control" name="usuario" />
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <label class="form-label">Senha</label>
+              <input type="password" class="form-control" name="senha" />
+            </div>
+          </div>
+          <a href="#">Esqueceu a Senha?</a>
+          <input type="submit" class="btn" value="entrar" />
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

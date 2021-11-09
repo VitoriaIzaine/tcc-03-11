@@ -1,0 +1,199 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{% static 'css/princi_login.css' %}" />
+    <title>Inicio</title>
+  </head>
+
+  <body>
+    {% include 'menu_jovem.html' %}
+
+    <div class="principal">
+      <h1 class="bem_vindo">Seja Bem-Vindo(a) {{ user.get_full_name }}</h1>
+      <a href="#openModal"
+        ><abbr title="Ajuda"
+          ><img class="ajuda" src="{%static 'images/iconeAjuda.png}" /></abbr
+      ></a>
+      <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <div class="gallery items-3">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+
+            <figure class="item">
+              <img src="./gifs/gif1.gif" width="1000px" height="300px" />
+            </figure>
+
+            <figure class="item">
+              <img src="./gifs/gif2.gif" width="1000px" height="300px" />
+            </figure>
+
+            <figure class="item">
+              <img src="./gifs/gif3.gif" width="1000px" height="300px" />
+            </figure>
+
+            <div class="controls">
+              <a href="#item-1" class="control-button">•</a>
+              <a href="#item-2" class="control-button">•</a>
+              <a href="#item-3" class="control-button">•</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div align="center">
+      <br />
+      <p>Pesquise o cargo ou uma empresa que você deseja.</p>
+      <form action="" method="get" class="d-flex">
+        <input
+          name="buscar"
+          class="form-control me-2"
+          type="search"
+          placeholder="Ex: Bosch"
+          aria-label="Search"
+        />
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+
+    <br />
+    <main class="cards">
+      <section class="card contact">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Bosch</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card shop">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Pirelli</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card about">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Coca-Cola</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card contact">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>CPFL</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card contact">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Sabesp</h3>
+        <span>Cargo da vaga</span>
+      </section>
+    </main>
+
+    <br />
+
+    <main class="cards">
+      <section class="card contact">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Nome empresa</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card shop">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Nome empresa</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card about">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Nome empresa</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card contact">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Nome empresa</h3>
+        <span>Cargo da vaga</span>
+      </section>
+      <section class="card contact">
+        <div class="icon">
+          <img src="#" alt="" />
+        </div>
+        <img
+          src="{% static 'images/iconeEmpresa.png' %}"
+          width="10px"
+          height="70px"
+        />
+        <h3>Nome empresa</h3>
+        <span>Cargo da vaga</span>
+      </section>
+    </main>
+    {% include 'footer.html' %}
+  </body>
+</html>

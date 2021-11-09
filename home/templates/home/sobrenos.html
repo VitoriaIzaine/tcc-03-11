@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Pagina principal interdace do JobTeens" />
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Quem Somos</title>
+  </head>
+
+  <body>
+    {% include 'menu.html' %}
+    <div>
+      <img id="fundo" src="{% static 'images/1.jpg' %}" alt="principal" />
+    </div>
+    <br />
+    <div class="jumbotron jumbotron-fluid bg-white text-black">
+      <div class="container">
+        <h1 class="display-4">QUEM SOMOS</h1>
+        <p class="lead">
+          Desde Março de 2019, oferecemos uma solução tecnológica para empresas
+          recrutarem os melhores jovens de forma simples, aprimorando seus
+          processos seletivos, ao unir tecnolo gia, inovação, propósito,
+          educação e um time inspirado em levar opor tunidades à juventude
+          brasileira, como pilares do seu trabalho. Existimos há pouco tempo,
+          mas o projeto já conectou 7 mil jovens a vagas de emprego,
+          possibilitando seus desenvolvi mentos profissionais e auxiliando
+          recrutadores a encontrarem talen tos perfeitos para o que as empre sas
+          necessitam. Além das oportunidades de emprego, temos um time focado em
+          educar o jovem, com a produção de minicursos personalizados, fazendo o
+          aprendi zado ser algo divertido e eficaz, com a utilização de
+          microlearning e gamificação, carinhosamente batizada por nós, como
+          Eduficação. Nosso sonho é mudar a realidade dos jovens no Brasil,
+          sabemos que estamos apenas no início de uma longa estrada, mas
+          contamos com a educação e as oportunidades de emprego para ajudar
+          nessa mudança. Lembrar disso, nos garante energia suficiente para
+          construir mais e mais soluções tecnológicas que pos sam acelerar essa
+          revolução.
+        </p>
+        <br />
+      </div>
+
+      <div class="container">
+        <h1 class="display-4">O que nos Norteia?</h1>
+        <p>Nosso propósito, missão e visão são nossas bússolas.</p>
+        <br />
+      </div>
+
+      <main class="cards">
+        <section class="card">
+          <div class="icon">
+            <img src="{% static 'images/logo_missao.png' %}" alt="" />
+          </div>
+          <h3>Missão</h3>
+          <span
+            >Revolucionar a forma como jovens e recrutadores se conectam para
+            então, garantir o match perfeito entre jovem e oportunidade.</span
+          >
+        </section>
+        <section class="card shop">
+          <div class="icon">
+            <img src="{% static 'images/logo_visao.png' %}" alt="" />
+          </div>
+          <h3>Visão</h3>
+          <span
+            >Revolucionar a forma como jovens e recrutadores se conectam para
+            então, garantir o match perfeito entre jovem e oportunidade.</span
+          >
+        </section>
+        <section class="card about">
+          <div class="icon">
+            <img src="{% static 'images/logo_valores.png' %}" alt="" />
+          </div>
+          <h3>Valores</h3>
+          <span
+            >Revolucionar a forma como jovens e recrutadores se conectam para
+            então, garantir o match perfeito entre jovem e oportunidade.</span
+          >
+        </section>
+      </main>
+    </div>
+
+    {% include 'footer.html' %}
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>

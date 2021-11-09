@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*-------------------Configura todo o html e todo o body------------------------------*/
+
+html, body {
+  margin: 0;
+  Box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  Justify-content: center;
+  Padding: 0;
+}
+/*-----------------------------------------------------------------------------------*/
+#fundo{
+height:500px;
+width:100%;
+}
+/*----------------------------Cards--------------------------------------*/
+
+.somosJob {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top:0px;
+  background-image:url("https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2020/02/os-3-hacc81bitos-de-pessoas-que-tecc82m-ideias-inovadoras-e-como-se-tornar-uma.jpg");
+  background-repeat:repeat;
+
+}
+
+.Dicas_panel {
+  height: 300px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_panel {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+
+.image_panel h2{
+	color: black;
+	text-align:justify;
+	Justify-content: center;
+	font-size:18px;
+	margin-top:0px;
+}
+
+.card{
+	width:350px;
+	height:250px;
+	margin-left:0px;
+}
+.card h4{
+	text-align:center;
+	color:black;
+
+}
+
+.card p{
+	text-align:center-left;
+	margin-left:30px;
+	color:black;
+}
+
+
+
+
+
+/********************(    GENERAL    )***********************/
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.teste{
+	height: 500px;
+  width: 500px;
+  display: flex;
+  margin-left:-155px;
+}
+/********************(    LOGIN PANEL   )***********************/
+.login_panel {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/********************(    LOGO PANEL   )***********************/
+
+.logo_panel {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:black;
+}
+
+.logo_content {
+  position: relative;
+  bottom: 50px;
+  color:black;
+}
+
+/********************(    RESPONSIVE   )***********************/
+
+@media screen and (max-width: 1040px) {
+  .logo_panel img {
+    max-width: 70%;
+  }
+
+  .logo_panel h2 {
+    font-size: max(25px, 20%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo_panel {
+    display: none;
+  }
+
+  .login_panel {
+    width: 100%;
+  }
+}

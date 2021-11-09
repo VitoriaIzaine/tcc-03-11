@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* ----------------------------Configura todo o html e todo o body--------------------------------------------- */
+html, body {
+	margin: 0;
+	Box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	Justify-content: center;
+	Padding: 0;
+}
+
+#fundo{
+height:500px;
+width:100%;
+}
+/*-------------------------------Cards-------------------------------*/
+main.cards {
+    display: flex;
+    padding: 0px;
+	margin-left: 200px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 120%;
+    margin: 16px 0;
+    color:white;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 90%;
+    margin-bottom: 16px;
+    color:white;
+}
+/* ---------------------------------Depoimento--------------------------------------------- */
+
+main.depoimento {
+    display: flex;
+    padding: 0px;
+    margin-left: 200px;
+}
+
+main.depoimento section.depoimento {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E88D9;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    max-height: 468px;
+    margin-left: 40px;
+    color:white;
+}
+
+main.depoimento section.depoimento:first-child {
+    margin-left: 0;
+}
+
+main.depoimento section.depoimento .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.depoimento section.depoimento img {
+    width: 100%;
+}
+
+main.depoimento section.depoimento h3 {
+    font-size: 120%;
+    margin: 16px 0;
+    color:white;
+}
+
+main.depoimento section.depoimento h6 {
+    font-size: 120%;
+    margin: 5px 0;
+    color:white;
+}
+
+main.depoimento section.depoimento span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.depoimento section.depoimento.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}

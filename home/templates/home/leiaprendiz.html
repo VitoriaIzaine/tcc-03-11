@@ -1,0 +1,92 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Pagina principal interdace do JobTeens" />
+    <link rel="stylesheet" href="{% static 'css/lei.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Lei do Aprendiz</title>
+  </head>
+
+  <body>
+    {% include 'menu.html' %}
+    <div>
+      <img id="fundo" src="{% static 'images/1.jpg' %}" alt="principal" />
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-white text-black">
+      <div class="container">
+        <h1 class="display-4">LEI DO JOVEM APRENDIZ!</h1>
+        <p class="lead">
+          Nº 10.097/2000, ampliada pelo Decreto Federal nº 5.598/2005. Determina
+          que todas as empresas de médio e grande porte contratem um número de
+          aprendizes equivalente a um mínimo de 5% e um máximo de 15% do seu
+          quadro de funcionários cujas funções demandem formação profissional.
+          No âmbito da Lei da Aprendizagem, aprendiz é o jovem que estuda e
+          trabalha, recebendo, ao mesmo tempo, formação na profissão para a qual
+          está se capacitando. Deve cursar a escola regular (se ainda não
+          concluiu o Ensino Fundamental) e estar matriculado e freque ntando
+          instituição de ensino técnico profissional conveniada com a empresa.
+        </p>
+      </div>
+    </div>
+
+    <main class="cards">
+      <section class="card contact">
+        <div class="icon">
+          <img src="{% static 'images/logo_idade.png' %}" alt="" />
+        </div>
+        <h3>Idade</h3>
+        <span
+          >Revolucionar a forma como jovens e recrutadores se conectam para
+          então, garantir o match perfeito entre jovem e oportunidade.</span
+        >
+      </section>
+      <section class="card shop">
+        <div class="icon">
+          <img src="{% static 'images/logo_horario.png' %}" alt="" />
+        </div>
+        <h3>Jornada de Trabalho</h3>
+        <span
+          >Revolucionar a forma como jovens e recrutadores se conectam para
+          então, garantir o match perfeito entre jovem e oportunidade.</span
+        >
+      </section>
+      <section class="card about">
+        <div class="icon">
+          <img src="{% static 'images/logo_contrato.png' %}" alt="" />
+        </div>
+        <h3>Contrato</h3>
+        <span
+          >Revolucionar a forma como jovens e recrutadores se conectam para
+          então, garantir o match perfeito entre jovem e oportunidade.</span
+        >
+      </section>
+    </main>
+    {% include 'footer.html' %}
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>
